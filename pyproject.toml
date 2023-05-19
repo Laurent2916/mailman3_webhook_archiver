@@ -10,16 +10,18 @@ version = "0.1.0"
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.12"
+
 mailman = "^3.3.8"
+requests = "^2.30.0"
 zope = "^5.8.1"
 
 [tool.poetry.group.dev]
 optional = true
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.0.267"
 black = "^23.3.0"
 isort = "^5.12.0"
+ruff = "^0.0.267"
 
 [tool.ruff]
 line-length = 120
