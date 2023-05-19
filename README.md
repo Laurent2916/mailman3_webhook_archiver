@@ -1,10 +1,16 @@
-# Installation
+# Mailman3 webhook archiver
+
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v1.json)](https://github.com/charliermarsh/ruff)
+
+## Installation
 
 A mailman archiver is a simple python package, to install it you can either use pip or install it manually.
 
 If your use-case doesn't fit the this archiver feel free to fork this project, create an issue or a pull request.
 
-## Install using pip (recommended)
+### Install using pip (recommended)
 
 Activate the python environment used by mailman.
 
@@ -13,7 +19,7 @@ Install the package using pip:
 pip install git+https://github.com/Laurent2916/mailman3_webhook_archiver.git
 ```
 
-## Manual install (not recommended)
+### Install manually (not recommended)
 
 Clone the repository:
 ```bash
@@ -28,7 +34,7 @@ cp -r mailman3_webhook_archiver /usr/lib/python3/dist-packages/
 cp -r mailman3_webhook_archiver /path/to/.venv/lib/python3.11/site-packages/
 ```
 
-# Configuration
+## Configuration
 
 The archiver loads its configuration using an external configuration file.
 Create and fill `/etc/mailman3/mailman-webhook-archiver.cfg` with the relevant informations.
@@ -52,7 +58,7 @@ configuration: /etc/mailman3/mailman3_webhook_archiver.cfg
 enable: yes
 ```
 
-# Special thanks
+## Special thanks
 
 - https://gitlab.com/mailman/mailman/blob/master/src/mailman/archiving/prototype.py
 - https://github.com/nim65s/matrix-webhook/
