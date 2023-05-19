@@ -10,7 +10,7 @@ A simple mailman3 archiver to notify a webhook of mails.
 
 A mailman archiver is a simple python package, to install it you can either use pip or install it manually.
 
-If your use-case doesn't fit the this archiver feel free to fork this project, create an issue or a pull request.
+If your use-case doesn't fit this archiver feel free to fork this project, create an issue or a pull request.
 
 ### Install using pip (recommended)
 
