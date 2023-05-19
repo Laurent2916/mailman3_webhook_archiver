@@ -4,6 +4,8 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v1.json)](https://github.com/charliermarsh/ruff)
 
+A simple mailman3 archiver to notify a webhook of mails.
+
 ## Installation
 
 A mailman archiver is a simple python package, to install it you can either use pip or install it manually.
