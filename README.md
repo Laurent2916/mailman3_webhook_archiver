@@ -13,7 +13,7 @@ Install the package using pip:
 pip install git+https://github.com/Laurent2916/mailman3_webhook_archiver.git
 ```
 
-## Manual install
+## Manual install (not recommended)
 
 Clone the repository:
 ```bash
@@ -33,7 +33,7 @@ cp -r mailman3_webhook_archiver /path/to/.venv/lib/python3.11/site-packages/
 The archiver loads its configuration using an external configuration file.
 Create and fill `/etc/mailman3/mailman-webhook-archiver.cfg` with the relevant informations.
 
-```conf
+```ini
 [global]
 url = https://webhook.example.com/foo/bar
 key = SUPER_SECRET_TOKEN_KEY
@@ -45,7 +45,7 @@ monitored_lists = my_mailing_list, another_list, foo, bar, test
 Modify the mailman configuration to enable the newly added archiver.
 Append the following to `/etc/mailman3/mailman.cfg`.
 
-```conf
+```ini
 [archiver.mailman3_webhook_archiver]
 class: mailman3_webhook_archiver.WebhookArchiver
 configuration: /etc/mailman3/mailman3_webhook_archiver.cfg
